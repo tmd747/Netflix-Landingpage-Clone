@@ -150,6 +150,17 @@ img {
   color: #fff;
 }
 
+/* Hide Content initially */
+#tab-1-content,
+#tab-2-content,
+#tab-3-content {
+  display: none;
+}
+
+.show {
+  display: block !important;
+}
+
 #tab-1-content .tab-1-content-inner {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -279,6 +290,10 @@ img {
   border-radius: 2px;
 }
 
+.btn-icon {
+  margin-left: 1rem;
+}
+
 .btn:hover {
   opacity: 0.9;
 }
@@ -363,5 +378,19 @@ img {
 
   #tab-2-content .tab-2-content-bottom {
     grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 650px) {
+  .tabs .container {
+    max-width: 90%;
+  }
+
+  .tab-content .container {
+    max-width: 95%;
+  }
+
+  .table tbody tr td {
+    font-size: 0.9rem;
   }
 }
