@@ -43,6 +43,8 @@ img {
 .showcase {
   width: 100%;
   height: 93vh;
+  min-height: 700px;
+  max-height: 800px;
   position: relative;
   background: url("background.jpg") no-repeat center center/cover;
 }
@@ -392,5 +394,48 @@ img {
 
   .table tbody tr td {
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .showcase-top img {
+    width: 120px;
+    top: 50%;
+    left: 5%;
+    transform: translate(0%, -50%);
+  }
+
+  .showcase-top a {
+    top: 50%;
+    right: 2%;
+    transform: translate(0%, -50%);
+  }
+  .showcase {
+    min-height: 500px;
+  }
+
+  .showcase .showcase-content {
+    margin-top: 25%;
+  }
+
+  .showcase .showcase-content h1 {
+    font-size: 2.8rem;
+  }
+
+  .showcase .showcase-content p {
+    font-size: 1.7rem;
+  }
+
+  .btn-xl {
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    margin-left: 10px;
+  }
+
+  .table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
   }
 }
